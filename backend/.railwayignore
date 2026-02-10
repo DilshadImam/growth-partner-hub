@@ -1,0 +1,10 @@
+# Files to ignore during Railway deployment
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
