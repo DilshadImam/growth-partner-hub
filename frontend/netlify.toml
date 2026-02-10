@@ -5,9 +5,8 @@
   # Publish directory (Vite builds to 'dist')
   publish = "dist"
   
-  # Base directory - IMPORTANT: Set this if deploying from monorepo
-  # Uncomment the line below if your frontend is in a 'frontend' folder
-  # base = "frontend"
+  # Base directory - IMPORTANT: This is required for monorepo structure
+  base = "frontend"
 
 [build.environment]
   # Node version
