@@ -14,7 +14,8 @@ const userSchema = new mongoose.Schema({
     unique: true,
     lowercase: true,
     trim: true,
-    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email']
+    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email'],
+    index: true
   },
   password: {
     type: String,
@@ -67,8 +68,7 @@ const userSchema = new mongoose.Schema({
   toObject: { virtuals: true }
 });
 
-// Index for better query performance
-userSchema.index({ email: 1 });
+// Index for better query performance (email index already defined in schema)
 userSchema.index({ role: 1 });
 
 // Virtual for assigned leads count
