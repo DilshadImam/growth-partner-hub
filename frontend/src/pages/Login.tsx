@@ -226,12 +226,6 @@ export default function Login() {
                     {loading.admin ? "Signing in..." : "Access Admin Panel"}
                   </Button>
                 </form>
-
-                <div className="mt-4 p-3 bg-gray-50 rounded-md text-xs text-gray-600">
-                  <strong>Demo Admin Credentials:</strong><br />
-                  Username: admin<br />
-                  Password: admin123
-                </div>
               </TabsContent>
             </Tabs>
 

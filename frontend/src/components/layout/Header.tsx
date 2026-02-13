@@ -156,7 +156,11 @@ export function Header() {
                 >
                   Login
                 </Button>
-                <Button size="sm" className="bg-white text-black hover:bg-white/90">
+                <Button 
+                  size="sm" 
+                  className="bg-white text-black hover:bg-white/90"
+                  onClick={() => navigate('/register')}
+                >
                   Get Started
                 </Button>
               </>
@@ -254,7 +258,13 @@ export function Header() {
                     >
                       Login
                     </Button>
-                    <Button className="w-full bg-white text-black hover:bg-white/90">
+                    <Button 
+                      className="w-full bg-white text-black hover:bg-white/90"
+                      onClick={() => {
+                        navigate('/register');
+                        setIsOpen(false);
+                      }}
+                    >
                       Get Started
                     </Button>
                   </>
